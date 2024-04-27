@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div>
+        <pre>
+            <!DOCTYPE html>
+<html>
+<head>
+    <title>form validation</title>
+    <style>
+        form{
+            background-color: azure;
+            width: 50%;
+            height: 800px;
+            margin-left: 400px;
+            margin-top:100px;
+            font-size: 20px;
+        }	
+        body{
+            background-color:rgb(176, 176, 215);
+        }
+
+        h1::first-letter{
+            color: red;
+        }
+        h1{
+            text-align: center;
+            font-family: segoe script;
+        }
+    </style>
+</head>
+<body>
+    <form name="myform" method="post" onsubmit="return validation()">
+        <h1>Contact Form</h1>
+        <div>
+            Name: <input type="text" name="name" value=""><br><br>
+            E-Mail: <input type="email" name="email" value=""><br><br>
+            Message: <textarea name="message"></textarea><br><br> 
+            <input type="submit" name="submit">
+        </div>
+
+        <nav>
+            <span><i class="fa fa-envelope-o"></i>&nbsp;lekhasrid2005@gmail.com</span>        <span><i class="fa fa-phone"></i>&nbsp;9063306457</span>          <span><i class="fa fa-linkedin-square"></i>&nbsp;<a href="https://www.linkedin.com/in/lekhasri-d-47a080265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></span><br>
+        </nav>
+    </form>
+    
+    <script>
+        function validation() {
+            var name = document.myform.name.value;
+            var email = document.myform.email.value;
+            var message = document.myform.message.value;
+    
+            if (name === "") {
+                alert("Name must not be empty");
+                document.myform.name.focus();
+                return false;
+            }
+    
+            if (email === "") {
+                alert("Email must not be empty");
+                document.myform.email.focus();
+                return false;
+            }
+    
+            if (message === "") {
+                alert("Message must not be empty");
+                document.myform.message.focus();
+                return false;
+            }
+    
+            return true;
+        }
+    </script>
+
+</body>
+</html>
+
+
+        </pre>
+    </div>
+</body>
+</html>
